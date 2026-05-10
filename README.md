@@ -45,6 +45,8 @@ Des scripts sont fournis pour lancer l'application en un clic :
 - **Linux / macOS :** `./run.sh`
 - **Windows :** Double-cliquez sur `run.bat`
 
+> **Note sur l'historique :** Suite à un problème technique lors de la fusion de nos branches de travail, nous avons dû réinitialiser l'historique du dépôt pour garantir la stabilité de la version finale.
+
 ### Avec Maven (Recommande)
 
 ```bash
