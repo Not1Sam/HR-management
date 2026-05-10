@@ -4,11 +4,26 @@ Application de bureau Swing pour le personnel RH, permettant de gerer les offres
 
 ## Technologies utilisees
 
-- **Java** (JDK 17+) - Langage de programmation
-- **Swing** - Bibliotheque graphique standard Java pour l'interface utilisateur
-- **Maven** - Outil de gestion de projet et de dependances
-- **Gson** - Bibliotheque pour parser et serialiser les donnees JSON
-- **API REST** - Communication avec le backend via HTTP
+- **Java (JDK 17+)** - Langage de programmation principal.
+- **Swing** - Bibliothèque graphique standard Java pour l'interface utilisateur.
+- **Maven** - Gestionnaire de dépendances et de build.
+
+### Dependances (Bibliotheques externes)
+
+L'application utilise les bibliothèques externes suivantes, gérées via Maven :
+
+1.  **Gson (Google JSON)** :
+    - **Pourquoi ?** C'est la bibliothèque de référence pour manipuler le format JSON en Java. Elle nous permet de transformer automatiquement les réponses de l'API (format texte JSON) en objets Java (modèles) et inversement. Cela simplifie énormément la gestion des données sans avoir à parser manuellement chaque champ.
+    - **Utilisation :** Utilisée dans tous les services de l'API (`AuthService`, `JobService`, etc.).
+
+### Bibliotheques standards Java (Built-in)
+
+Nous avons également exploité des fonctionnalités avancées de la bibliothèque standard Java :
+
+1.  **java.net.http.HttpClient (Java 11+)** :
+    - **Pourquoi ?** Pour effectuer les requêtes HTTP vers le backend. C'est une bibliothèque moderne qui supporte l'asynchronisme et la gestion simplifiée des headers, remplaçant avantageusement l'ancienne classe `HttpURLConnection`.
+2.  **javax.swing** :
+    - **Pourquoi ?** Pour construire l'interface graphique multi-plateforme. Nous avons utilisé des `LayoutManagers` complexes (`GridBagLayout`) pour assurer la réactivité de l'affichage.
 
 ## Architecture
 
