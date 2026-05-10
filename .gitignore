@@ -1,0 +1,37 @@
+# Build and temporary files
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.bak
+
+# IDE specific files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+bin/
+out/
+.DS_Store
+Thumbs.db
+
+# Reports and generated documents
+reports/
+
+# Local configurations
+.env
+.env.local
+
+# Agent/AI related (Camouflage)
+.agents/
+.gemini/
+skills-lock.json
+GEMINI.md
+MEMORY.md
+.geminiignore
