@@ -59,8 +59,20 @@ src/main/java/com/hrmanager/
 Des scripts sont fournis pour lancer l'application en un clic :
 - **Linux / macOS :** `./run.sh`
 - **Windows :** Double-cliquez sur `run.bat`
+- **Windows PowerShell :** `./start.ps1`
 
 > **Note sur l'historique :** Suite à un problème technique lors de la fusion de nos branches de travail, nous avons dû réinitialiser l'historique du dépôt pour garantir la stabilité de la version finale.
+
+### Lancement direct avec PowerShell
+
+Ouvrez PowerShell dans le dossier du projet et exécutez :
+
+```powershell
+Set-Location 'C:\Users\pc\Desktop\HR Management'
+./start.ps1
+```
+
+Le script `start.ps1` tente automatiquement de détecter un JDK installé et utilise le wrapper Maven du projet.
 
 ### Avec Maven (Recommande)
 
